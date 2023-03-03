@@ -67,5 +67,14 @@ Check the default shiny app is running by visiting <Virtual Machine IP Address>:
   
 
 ## Step 12: Install Your Shiny App
+Change Directory, become a super user, delete the content of the folder and change folder permissions.
+
+  ```
   cd /srv/shiny-server
+  sudo su
+  rm /srv/shiny-server/*
+  chmod 7777 -R /srv/shiny-server
+  ```
+   
+  You can either use a text editor to create an app.R file and upload your code or upload your code via a file sharing system 
 
