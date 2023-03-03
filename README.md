@@ -18,6 +18,8 @@ ADD PICTURES
 
 Access the Openstack dashboard on the following link(https://openstack.rosalind.kcl.ac.uk/dashboard/auth/login/?next=/dashboard/project/).
 
+You will need to sign in using your KCL username and password.
+
 Make sure to use the latest version of ubuntu.
 
 Depoy a virtual machine following these instructions(https://legacy.rosalind.kcl.ac.uk/doku.php?id=openstack:start)
