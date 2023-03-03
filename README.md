@@ -76,5 +76,12 @@ Change Directory, become a super user, delete the content of the folder and chan
   chmod 7777 -R /srv/shiny-server
   ```
    
-  You can either use a text editor to create an app.R file and upload your code or upload your code via a file sharing system 
+  You can either use a text editor to create an app.R file and upload your code or upload your code via a file sharing system.
+  
+  After uploading your code ensure all the neccessary R packages are installed (as a super user) and then restart the shiny server.
 
+```
+  sudo systemctl restart shiny-server
+```
+ 
+  Check your shiny app is running by visiting <Virtual Machine IP Address>:3838
