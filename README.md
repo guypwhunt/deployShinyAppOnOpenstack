@@ -87,3 +87,26 @@ sudo systemctl restart shiny-server
 ```
  
 Check your shiny app is running by visiting <Virtual Machine IP Address>:3838
+  
+## Step 13: Optional Step - Increase the Shiny Server Time Out
+  
+Open the shiny-server.conf file.
+  
+```
+sudo vi /etc/shiny-server/shiny-server.conf
+```
+
+Add the following lines directly below under “run_as shiny”:
+  
+```
+http_keepalive_timeout 300;
+sockjs_heartbeat_delay 10;
+sockjs_disconnect_delay 300;
+disable_websockets TRUE;
+app_init_timeout 300;
+app_idle_timeout 300;
+```
+Save the file and restart the shiny server
+```
+sudo systemctl restart shiny-server
+```
