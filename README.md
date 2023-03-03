@@ -38,7 +38,7 @@ Follow these instructions(https://linuxize.com/post/how-to-install-r-on-ubuntu-2
 
 ## Step 8: Install Shiny Server on the Virtual Machine
 
-Follow these instructions([https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/)
+Follow these instructions(https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/)
 
 ## Step 9: Install the Neccessary Modules on the Virtual Machine
 
