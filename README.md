@@ -64,3 +64,8 @@ sudo systemctl restart shiny-server
 ```
 
 Check the default shiny app is running by visiting <Virtual Machine IP Address>:3838
+  
+
+## Step 12: Install Your Shiny App
+  cd /srv/shiny-server
+
