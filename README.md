@@ -12,19 +12,17 @@ You will need to sign in using your KCL username and password.
 
 ## Step 3: Connect to the VPN
 
-ADD PICTURES
-
 ## Step 4: Deploy a Virtual Machine
 
-Access the Openstack dashboard on the following link(https://openstack.rosalind.kcl.ac.uk/dashboard/auth/login/?next=/dashboard/project/).
+Access the Openstack dashboard on the following link(https://cloud.er.kcl.ac.uk/project/).
 
 You will need to sign in using your KCL username and password.
 
 Make sure to use the latest version of ubuntu.
 
-Depoy a virtual machine following these instructions(https://legacy.rosalind.kcl.ac.uk/doku.php?id=openstack:start)
+Depoy a virtual machine following these instructions(https://docs.er.kcl.ac.uk/CREATE/cloud/launch_instance/)
 
-ADD MORE STEPS
+Additional CREATE OpenStack documentation can be found here(https://docs.er.kcl.ac.uk/CREATE/cloud/web_interface/)
 
 ## Step 5: Add a Security Rule for Port 3838
 
