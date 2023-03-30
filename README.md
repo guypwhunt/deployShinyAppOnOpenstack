@@ -32,6 +32,10 @@ Depoy a virtual machine following these [instructions](https://docs.er.kcl.ac.uk
 
 Allocate a floating IP address.
 
+Add all pre-esisting security groups. 
+
+Documentation can be found [here](https://github.kcl.ac.uk/pages/maudsley-brc-cti/drive-health-hpc-training/cloud/exercises/)
+
 Additional CREATE OpenStack documentation can be found [here](https://docs.er.kcl.ac.uk/CREATE/cloud/web_interface/)
 
 ## Step 6: Add a Security Rule for Port 3838
