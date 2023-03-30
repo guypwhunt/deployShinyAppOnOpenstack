@@ -18,6 +18,8 @@ Create a new network.
 
 Create a router connecting the external network to your new network.
 
+Details on how to do this can be found [here](https://github.kcl.ac.uk/pages/maudsley-brc-cti/drive-health-hpc-training/cloud/exercises/)
+
 ## Step 5: Deploy a Virtual Machine
 
 Access the Openstack dashboard on the following [link](https://cloud.er.kcl.ac.uk/project/).
