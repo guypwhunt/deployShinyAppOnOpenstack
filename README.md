@@ -6,7 +6,7 @@ Email [E-Research](mailto:e-research@kcl.ac.uk) requesting an OpenStack account 
 
 ## Step 2: Set Up VPN
 
-Set up your OpenStack VPN following these instructions(https://docs.er.kcl.ac.uk/CREATE/tools/openvpn/)
+Set up your OpenStack VPN following these [instructions](https://docs.er.kcl.ac.uk/CREATE/tools/openvpn/)
 
 You will need to sign in using your KCL username and password.
 
@@ -14,15 +14,15 @@ You will need to sign in using your KCL username and password.
 
 ## Step 4: Deploy a Virtual Machine
 
-Access the Openstack dashboard on the following link(https://cloud.er.kcl.ac.uk/project/).
+Access the Openstack dashboard on the following [link](https://cloud.er.kcl.ac.uk/project/).
 
 You will need to sign in using your KCL username and password.
 
 Make sure to use the latest version of ubuntu.
 
-Depoy a virtual machine following these instructions(https://docs.er.kcl.ac.uk/CREATE/cloud/launch_instance/)
+Depoy a virtual machine following these [instructions](https://docs.er.kcl.ac.uk/CREATE/cloud/launch_instance/)
 
-Additional CREATE OpenStack documentation can be found here(https://docs.er.kcl.ac.uk/CREATE/cloud/web_interface/)
+Additional CREATE OpenStack documentation can be found [here](https://docs.er.kcl.ac.uk/CREATE/cloud/web_interface/)
 
 ## Step 5: Add a Security Rule for Port 3838
 
@@ -32,11 +32,11 @@ ADD PICTURES
 
 ## Step 7: Install R on the Virtual Machine
 
-Follow these instructions(https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/)
+Follow these [instructions](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/)
 
 ## Step 8: Install Shiny Server on the Virtual Machine
 
-Follow these instructions(https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/)
+Follow these [instructions](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/)
 
 ## Step 9: Install the Neccessary Modules on the Virtual Machine
 
