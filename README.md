@@ -30,11 +30,11 @@ Make sure to use the latest version of ubuntu.
 
 Depoy a virtual machine following these [instructions](https://docs.er.kcl.ac.uk/CREATE/cloud/launch_instance/)
 
+Allocate a floating IP address.
+
 Additional CREATE OpenStack documentation can be found [here](https://docs.er.kcl.ac.uk/CREATE/cloud/web_interface/)
 
 ## Step 6: Add a Security Rule for Port 3838
-
-ADD PICTURES
 
 ## Step 7: SSH to Your Virtual Machine
 
