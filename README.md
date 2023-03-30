@@ -6,7 +6,7 @@ Email [E-Research](mailto:e-research@kcl.ac.uk) requesting an OpenStack account 
 
 ## Step 2: Set Up VPN
 
-Set up your OpenStack VPN following these instructions(https://github.kcl.ac.uk/e-research/rosalind-openvpn)
+Set up your OpenStack VPN following these instructions(https://docs.er.kcl.ac.uk/CREATE/tools/openvpn/)
 
 You will need to sign in using your KCL username and password.
 
