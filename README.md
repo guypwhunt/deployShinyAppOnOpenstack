@@ -149,9 +149,9 @@ server {
   
 After uploading your code ensure all the neccessary R packages are installed (as a super user) and then restart the shiny server.
 
-'''
+```
 sudo systemctl restart shiny-server
 sudo systemctl status shiny-server
-'''
+```
  
 Check your shiny app is running by visiting <Virtual Machine IP Address>:3838
