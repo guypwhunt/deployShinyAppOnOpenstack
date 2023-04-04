@@ -68,7 +68,7 @@ It is important to become a super user before installing R packages so that the 
 ```
 sudo su
 sudo -i R
-install.packages(c(“shiny”,   "rmarkdown"))
+install.packages(c("shiny",   "rmarkdown"))
 q()
 exit
 ```
