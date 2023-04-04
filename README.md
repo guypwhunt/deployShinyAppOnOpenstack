@@ -59,7 +59,7 @@ Follow these [instructions](https://www.rstudio.com/products/shiny/download-serv
 
 Run this command:
 ```
-sudo apt install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev net-tools libssl-dev libz-dev
+sudo apt install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev net-tools libssl-dev libz-dev gfortran
 ```
 
 ## Step 11: Installing R Packages
