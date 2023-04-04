@@ -78,8 +78,6 @@ q()
 exit
 ```
 
-## Step 11: Installing R Packages
-
 Restart the shiny server
 ```
 sudo systemctl restart shiny-server
@@ -89,7 +87,7 @@ Check the default shiny app is running by visiting "Virtual Machine IP Address":
 
 e.g. http://10.211.116.107:3838/
 
-## Step 12: Install Your Shiny App
+## Step 11: Install Your Shiny App
 Create a new folder called "app" in the users home directory (/home/ubuntu/).
 
 Upload your code to the /home/ubuntu/app directory
