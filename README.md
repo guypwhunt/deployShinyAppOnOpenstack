@@ -94,6 +94,16 @@ Upload your code to the /home/ubuntu/app directory
   
 You can either use a text editor to create an app.R file and upload your code or upload your code via a file sharing system.
 
+Install your packages as a super user e.g.
+
+```
+sudo su
+R
+install.packages(c('shiny','ggplot2','shinydashboard','knitr','rmarkdown','ggthemes','plotly','DT','data.table','dplyr','shinythemes','RColorBrewer','markdown','shinycssloaders','MASS','stringr','ggpubr','rlang','shinybusy'))
+q()
+exit
+```
+
 Update the shiny config file permissions to allow you to edit it.
 
 ```
