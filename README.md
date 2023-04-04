@@ -41,6 +41,12 @@ Additional CREATE OpenStack documentation can be found [here](https://docs.er.kc
 
 ## Step 7: SSH to Your Virtual Machine
 
+Change directory to the directory containing the key
+'''cd C:\Users\guypw\OneDrive\Documents\createOpenStack'''
+
+ssh into the virtual machine
+'''ssh -i createOpenStackKey.pem ubuntu@10.211.114.16'''
+
 ## Step 8: Install R on the Virtual Machine
 
 Follow these [instructions](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/)
