@@ -105,7 +105,8 @@ Update the shiny config file (/etc/shiny-server/shiny-server.conf) to your apps 
 ```vim /etc/shiny-server/shiny-server.conf```
 
 You can replace the contents of the config file with this:
-```run_as shiny;
+```
+run_as shiny;
 http_keepalive_timeout 300;
 sockjs_heartbeat_delay 10;
 sockjs_disconnect_delay 300;
@@ -130,7 +131,8 @@ server {
     # an index of the applications available in this directory will be shown.
     directory_index on;
   }
-}```
+}
+```
 
   
 After uploading your code ensure all the neccessary R packages are installed (as a super user) and then restart the shiny server.
