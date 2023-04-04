@@ -39,7 +39,7 @@ Documentation can be found [here](https://github.kcl.ac.uk/pages/maudsley-brc-ct
 
 Additional CREATE OpenStack documentation can be found [here](https://docs.er.kcl.ac.uk/CREATE/cloud/web_interface/)
 
-## Step 7: SSH to Your Virtual Machine
+## Step 6: SSH to Your Virtual Machine
 
 Change directory to the directory containing the key e.g.:
 ```cd C:\Users\guypw\OneDrive\Documents\createOpenStack```
@@ -47,7 +47,7 @@ Change directory to the directory containing the key e.g.:
 ssh into the virtual machine e.g.:
 ```ssh -i createOpenStackKey.pem ubuntu@10.211.114.16```
 
-## Step 8: Install R on the Virtual Machine
+## Step 7: Install R on the Virtual Machine
 
 Follow these [instructions](https://linuxize.com/post/how-to-install-r-on-ubuntu-20-04/)
 
@@ -55,18 +55,18 @@ Make sure you get the latest version.
 
 ```sudo apt-get update```
 
-## Step 9: Install Shiny Server on the Virtual Machine
+## Step 8: Install Shiny Server on the Virtual Machine
 
 Follow these [instructions](https://www.rstudio.com/products/shiny/download-server/ubuntu/)
 
-## Step 10: Install the Neccessary Modules on the Virtual Machine
+## Step 9: Install the Neccessary Modules on the Virtual Machine
 
 Run this command:
 ```
 sudo apt-get install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev net-tools libssl-dev libz-dev gfortran liblapack-dev libopenblas-dev libpng-dev libjpeg-dev cmake liblzma-dev python-dev libbz2-dev libclang-dev
 ```
 
-## Step 11: Installing R Packages
+## Step 10: Installing R Packages
 
 It is important to become a super user before installing R packages so that the shiny server can also access the packages:
 ```
@@ -77,17 +77,18 @@ q()
 exit
 ```
 
-## Step 12: Installing R Packages
+## Step 11: Installing R Packages
 
 Restart the shiny server
 ```
 sudo systemctl restart shiny-server
 ```
 
-Check the default shiny app is running by visiting <Virtual Machine IP Address>:3838
-  
+Check the default shiny app is running by visiting "Virtual Machine IP Address":3838
 
-## Step 13: Install Your Shiny App
+e.g. http://10.211.116.107:3838/
+
+## Step 12: Install Your Shiny App
 Create a new folder called "app" in the users home directory (/home/ubuntu/).
 
 Upload your code to the /home/ubuntu/app directory
