@@ -31,6 +31,7 @@ Make sure to use the latest version of ubuntu.
 Depoy a virtual machine following these [instructions](https://docs.er.kcl.ac.uk/CREATE/cloud/launch_instance/)
 
 Associate it with the external network:
+
 <img width="719" alt="image" src="https://user-images.githubusercontent.com/68480973/229762396-287554b5-af79-4744-b818-2d32349f51f7.png">
 
 Only add the security group you created (the default one will prevent all traffic). 
