@@ -42,10 +42,10 @@ Additional CREATE OpenStack documentation can be found [here](https://docs.er.kc
 ## Step 7: SSH to Your Virtual Machine
 
 Change directory to the directory containing the key e.g.:
-'''cd C:\Users\guypw\OneDrive\Documents\createOpenStack'''
+```cd C:\Users\guypw\OneDrive\Documents\createOpenStack```
 
 ssh into the virtual machine e.g.:
-'''ssh -i createOpenStackKey.pem ubuntu@10.211.114.16'''
+```ssh -i createOpenStackKey.pem ubuntu@10.211.114.16```
 
 ## Step 8: Install R on the Virtual Machine
 
@@ -53,8 +53,8 @@ Follow these [instructions](https://linuxize.com/post/how-to-install-r-on-ubuntu
 
 Make sure you get the latest version.
 
-'''apt-get update'''
-'''apt-get upgrade'''
+```apt-get update```
+```apt-get upgrade```
 
 ## Step 9: Install Shiny Server on the Virtual Machine
 
@@ -63,27 +63,27 @@ Follow these [instructions](https://www.rstudio.com/products/shiny/download-serv
 ## Step 10: Install the Neccessary Modules on the Virtual Machine
 
 Run this command:
-'''
+```
 sudo apt-get install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev net-tools libssl-dev libz-dev gfortran liblapack-dev libopenblas-dev libpng-dev libjpeg-dev
-'''
+```
 
 ## Step 11: Installing R Packages
 
 It is important to become a super user before installing R packages so that the shiny server can also access the packages:
-'''
+```
 sudo su
 sudo -i R
 install.packages(c("shiny",   "rmarkdown"))
 q()
 exit
-'''
+```
 
 ## Step 12: Installing R Packages
 
 Restart the shiny server
-'''
+```
 sudo systemctl restart shiny-server
-'''
+```
 
 Check the default shiny app is running by visiting <Virtual Machine IP Address>:3838
   
@@ -97,13 +97,13 @@ You can either use a text editor to create an app.R file and upload your code or
 
 Update the shiny config file permissions to allow you to edit it.
 
-'''
+```
 sudo chmod 7777 -R /etc/shiny-server
-'''
+```
 
 Update the shiny config file (/etc/shiny-server/shiny-server.conf) to your apps location.
 
-'''vim /etc/shiny-server/shiny-server.conf'''
+```vim /etc/shiny-server/shiny-server.conf```
 
 You can replace the contents of the config file with this:
 run_as shiny;
