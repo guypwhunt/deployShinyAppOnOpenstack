@@ -154,4 +154,4 @@ sudo systemctl restart shiny-server
 sudo systemctl status shiny-server
 ```
  
-Check your shiny app is running by visiting <Virtual Machine IP Address>:3838
+Check your shiny app is running by visiting "Virtual Machine IP Address":3838
