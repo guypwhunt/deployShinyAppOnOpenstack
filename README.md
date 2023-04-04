@@ -84,16 +84,50 @@ Check the default shiny app is running by visiting <Virtual Machine IP Address>:
   
 
 ## Step 13: Install Your Shiny App
-Change Directory, become a super user, delete the content of the folder and change folder permissions.
+Create a new folder called "app" in the users home directory (/home/ubuntu/).
 
-```
-cd /srv/shiny-server
-sudo su
-rm /srv/shiny-server/*
-chmod 7777 -R /srv/shiny-server
-```
-   
+Upload your code to the /home/ubuntu/app directory
+  
 You can either use a text editor to create an app.R file and upload your code or upload your code via a file sharing system.
+
+Update the shiny config file permissions to allow you to edit it.
+
+'''```
+sudo chmod 7777 -R /etc/shiny-server
+```
+
+Update the shiny config file (/etc/shiny-server/shiny-server.conf) to your apps location.
+
+'''vim /etc/shiny-server/shiny-server.conf'''
+
+You can replace the contents of the config file with this:
+run_as shiny;
+http_keepalive_timeout 300;
+sockjs_heartbeat_delay 10;
+sockjs_disconnect_delay 300;
+disable_websockets TRUE;
+app_init_timeout 300;
+app_idle_timeout 300;
+
+# Define a server that listens on port 3838
+server {
+  listen 3838;
+
+  # Define a location at the base URL
+  location / {
+
+    # Host the directory of Shiny Apps stored in this directory
+    site_dir /home/ubuntu/app;
+
+    # Log all Shiny output to files in this directory
+    log_dir /var/log/shiny-server;
+
+    # When a user visits the base URL rather than a particular application,
+    # an index of the applications available in this directory will be shown.
+    directory_index on;
+  }
+}
+
   
 After uploading your code ensure all the neccessary R packages are installed (as a super user) and then restart the shiny server.
 
@@ -102,26 +136,3 @@ sudo systemctl restart shiny-server
 ```
  
 Check your shiny app is running by visiting <Virtual Machine IP Address>:3838
-  
-## Step 14: Optional Step - Increase the Shiny Server Time Out
-  
-Open the shiny-server.conf file.
-  
-```
-sudo vi /etc/shiny-server/shiny-server.conf
-```
-
-Add the following lines directly below under “run_as shiny”:
-  
-```
-http_keepalive_timeout 300;
-sockjs_heartbeat_delay 10;
-sockjs_disconnect_delay 300;
-disable_websockets TRUE;
-app_init_timeout 300;
-app_idle_timeout 300;
-```
-Save the file and restart the shiny server
-```
-sudo systemctl restart shiny-server
-```
