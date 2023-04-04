@@ -12,11 +12,11 @@ You will need to sign in using your KCL username and password.
 
 ## Step 3: Connect to the VPN
 
-## Step 4: Set Up the Network Infastructure
+## Step 4: Create a new Security Group that allows internet traffic
 
-Create a new network.
+Add a security group with these rules:
 
-Create a router connecting the external network to your new network.
+<img width="768" alt="image" src="https://user-images.githubusercontent.com/68480973/229761921-9457f6dc-bbdf-4dca-ab0a-c08f8f8da700.png">
 
 Details on how to do this can be found [here](https://github.kcl.ac.uk/pages/maudsley-brc-cti/drive-health-hpc-training/cloud/exercises/)
 
@@ -30,15 +30,14 @@ Make sure to use the latest version of ubuntu.
 
 Depoy a virtual machine following these [instructions](https://docs.er.kcl.ac.uk/CREATE/cloud/launch_instance/)
 
-Allocate a floating IP address.
+Associate it with the external network:
+<img width="719" alt="image" src="https://user-images.githubusercontent.com/68480973/229762396-287554b5-af79-4744-b818-2d32349f51f7.png">
 
-Add all pre-esisting security groups. 
+Only add the security group you created (the default one will prevent all traffic). 
 
 Documentation can be found [here](https://github.kcl.ac.uk/pages/maudsley-brc-cti/drive-health-hpc-training/cloud/exercises/)
 
 Additional CREATE OpenStack documentation can be found [here](https://docs.er.kcl.ac.uk/CREATE/cloud/web_interface/)
-
-## Step 6: Add a Security Rule for Port 3838
 
 ## Step 7: SSH to Your Virtual Machine
 
