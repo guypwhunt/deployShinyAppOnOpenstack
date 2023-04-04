@@ -53,10 +53,8 @@ Follow these [instructions](https://linuxize.com/post/how-to-install-r-on-ubuntu
 
 Make sure you get the latest version.
 
-'''
-apt-get update
-apt-get upgrade
-'''
+'''apt-get update
+apt-get upgrade'''
 
 ## Step 9: Install Shiny Server on the Virtual Machine
 
