@@ -159,7 +159,7 @@ Check your shiny app is running by visiting "Virtual Machine IP Address":3838
 Create a folder for your shell script in your app folder e.g. 
 
 ```
-mdir /home/ubuntu/app/shellScripts
+mkdir /home/ubuntu/app/shellScripts
 ```
 
 Create a shell script:
@@ -175,6 +175,7 @@ Add the following contents to the shell script file:
 #!/bin/sh
 
 sudo systemctl restart shiny-server
+echo "Shiny restart complete"
 ```
 
 Create a new daily job:
@@ -183,9 +184,15 @@ Create a new daily job:
 sudo crontab -e
 ```
 
-Add the following line:
+Add the following line, this will set the shell script to run every day at 23:55:
 
 ```
 55 23 * * * /home/ubuntu/app/shellScripts/dailyProcess.sh
+```
+
+You can test your shellscript with this command:
+
+```
+sh /home/ubuntu/app/shellScripts/dailyProcess.sh
 ```
 
