@@ -58,7 +58,7 @@ Make sure you get the latest version.
 
 ## Step 8: Install Shiny Server on the Virtual Machine
 
-Follow these [instructions](https://www.rstudio.com/products/shiny/download-server/ubuntu/)
+Follow these [instructions](https://www.rstudio.com/products/shiny/download-server/ubuntu/) from Step 3 onwards. 
 
 ## Step 9: Install the Neccessary Modules on the Virtual Machine
 
