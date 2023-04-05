@@ -14,6 +14,10 @@ You will need to sign in using your KCL username and password.
 
 ## Step 4: Create a new Security Group that allows internet traffic
 
+Access the Openstack dashboard on the following [link](https://cloud.er.kcl.ac.uk/project/).
+
+You will need to sign in using your KCL username and password.
+
 Add a security group with these rules:
 
 <img width="768" alt="image" src="https://user-images.githubusercontent.com/68480973/229761921-9457f6dc-bbdf-4dca-ab0a-c08f8f8da700.png">
@@ -21,10 +25,6 @@ Add a security group with these rules:
 Details on how to do this can be found [here](https://github.kcl.ac.uk/pages/maudsley-brc-cti/drive-health-hpc-training/cloud/exercises/)
 
 ## Step 5: Deploy a Virtual Machine
-
-Access the Openstack dashboard on the following [link](https://cloud.er.kcl.ac.uk/project/).
-
-You will need to sign in using your KCL username and password.
 
 Make sure to use the latest version of ubuntu.
 
