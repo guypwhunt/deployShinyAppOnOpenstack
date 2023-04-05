@@ -153,3 +153,39 @@ sudo systemctl status shiny-server
 ```
  
 Check your shiny app is running by visiting "Virtual Machine IP Address":3838
+
+## Step 12: Optionally you can set up a script to restart the shiny server everyday
+
+Create a folder for your shell script in your app folder e.g. 
+
+```
+mdir /home/ubuntu/app/shellScripts
+```
+
+Create a shell script:
+
+```
+cd /home/ubuntu/app/shellScripts
+vim dailyProcess.sh
+```
+
+Add the following contents to the shell script file:
+
+```
+#!/bin/sh
+
+sudo systemctl restart shiny-server
+```
+
+Create a new daily job:
+
+```
+sudo crontab -e
+```
+
+Add the following line:
+
+```
+55 23 * * * /home/ubuntu/app/shellScripts/dailyProcess.sh
+```
+
