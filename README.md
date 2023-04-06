@@ -72,7 +72,7 @@ sudo apt-get install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev 
 It is important to become a super user before installing R packages so that the shiny server can also access the packages:
 ```
 sudo su
-sudo -i R
+R
 install.packages(c("shiny",   "rmarkdown"))
 q()
 exit
