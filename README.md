@@ -91,6 +91,12 @@ e.g. http://10.211.116.107:3838/
 Create a new folder called "app" in the users home directory (/home/ubuntu/).
 
 Upload your code to the /home/ubuntu/app directory
+
+Update the directories permissions:
+
+```
+sudo chmod 7777 -R /home/ubuntu/app/
+```
   
 You can either use a text editor to create an app.R file and upload your code or upload your code via a file sharing system.
 
