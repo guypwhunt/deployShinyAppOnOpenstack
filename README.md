@@ -20,7 +20,7 @@ You will need to sign in using your KCL username and password.
 
 Add a security group with these rules:
 
-<img width="771" alt="image" src="https://user-images.githubusercontent.com/68480973/231430600-b6c78e98-3c05-4062-8ec6-d5d88f5ba8ce.png">
+<img width="842" alt="image" src="https://user-images.githubusercontent.com/68480973/232744822-d495ba7f-c568-49c3-847f-2e33dad88ae7.png">
 
 Details on how to do this can be found [here](https://github.kcl.ac.uk/pages/maudsley-brc-cti/drive-health-hpc-training/cloud/exercises/)
 
@@ -34,7 +34,7 @@ Associate it with the external network:
 
 <img width="719" alt="image" src="https://user-images.githubusercontent.com/68480973/229762396-287554b5-af79-4744-b818-2d32349f51f7.png">
 
-Only add the security group you created and the default security group. 
+Only add the security group you created. 
 
 Documentation can be found [here](https://github.kcl.ac.uk/pages/maudsley-brc-cti/drive-health-hpc-training/cloud/exercises/)
 
