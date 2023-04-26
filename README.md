@@ -202,7 +202,7 @@ You can test your shellscript with this command:
 sh /home/ubuntu/app/shellScripts/dailyProcess.sh
 ```
 
-## Step 13: Requst a poblic facing URL from the CREATE admins
+## Step 13: Requst a public facing URL from the CREATE admins
 
 Email [E-Research](mailto:e-research@kcl.ac.uk) requesting a public facing URL with the details in the Excel below (the Excel contains several examples):
 
