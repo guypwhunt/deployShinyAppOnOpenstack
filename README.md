@@ -187,7 +187,7 @@ echo "Shiny restart complete"
 Create a new daily job:
 
 ```
-sudo crontab -e
+crontab -e
 ```
 
 Add the following line, this will set the shell script to run every day at 23:55:
@@ -200,6 +200,11 @@ You can test your shellscript with this command:
 
 ```
 sh /home/ubuntu/app/shellScripts/dailyProcess.sh
+```
+
+You can test the cron job with this command:
+```
+run-parts /etc/cron.daily
 ```
 
 ## Step 13: Requst a public facing URL from the CREATE admins
